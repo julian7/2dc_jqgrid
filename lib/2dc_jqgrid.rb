@@ -215,7 +215,7 @@ module Jqgrid
         			colModel: #{sub_col_model},
         		   	rowNum:#{options[:subgrid][:rows_per_page]},
         		   	pager: pager_id,
-        		   	imgpath: '/images/jqgrid',
+        		   	imgpath: '/pictures/jqgrid',
         		   	sortname: '#{options[:subgrid][:sort_column]}',
         		    sortorder: '#{options[:subgrid][:sort_order]}',
                 viewrecords: true,
@@ -225,7 +225,7 @@ module Jqgrid
         		    height: '100%'
         		})
         		.navGrid("#"+pager_id,{edit:#{options[:subgrid][:edit]},add:#{options[:subgrid][:add]},del:#{options[:subgrid][:delete]},search:false})
-        		.navButtonAdd("#"+pager_id,{caption:"Search",title:"Toggle Search",buttonimg:'/images/jqgrid/search.png',
+        		.navButtonAdd("#"+pager_id,{caption:"Search",title:"Toggle Search",buttonimg:'/pictures/jqgrid/search.png',
             	onClickButton:function(){ 
             		if(jQuery("#t_"+subgrid_table_id).css("display")=="none") {
             			jQuery("#t_"+subgrid_table_id).css("display","");
@@ -255,7 +255,7 @@ module Jqgrid
               pager: '##{id}_pager',
               rowNum:#{options[:rows_per_page]},
               rowList:[10,25,50,100],
-              imgpath: '/images/jqgrid',
+              imgpath: '/pictures/jqgrid',
               sortname: '#{options[:sort_column]}',
               viewrecords: true,
               height: #{options[:height]},
